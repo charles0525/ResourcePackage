@@ -1,0 +1,32 @@
+﻿[
+  {
+    "outputFileName": "Content/site.min.css",
+    "inputFiles": [
+      "Content/bootstrap.css",
+      "Content/Site.css"
+    ]
+  },
+  {
+    "outputFileName": "Scripts/site.min.js",
+    "inputFiles": [
+      "Scripts/bootstrap.js",
+      "Scripts/jquery.validate.js"
+    ],
+    "minify": {
+      "enabled": true,
+      "renameLocals": true
+    },
+    "sourceMap": false 
+  }
+]
+/*
+  outputFileName - 要输出打包包文件的路径。 与bundleconfig.json 文件的相对路径。 必填
+  inputFiles - 要打包的的文件路径数组。 与是配置文件的相对路径。 选填，如果是空数组会输出一个空文件。 支持通配符模式
+  minify - 输入出类型的压缩选项。 选填，默认值 -minify: { enabled: true }
+  输入出文件类型可用配置选项。
+    CSS Minifier
+    JavaScript Minifier
+    HTML Minifier
+  includeInProject - 将生成的文件添加到项目。 选填， 默认值 - false
+  sourceMaps - 生成合并文件的源文件映射。 选填，默认值 - false
+*/
